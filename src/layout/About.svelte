@@ -2,7 +2,7 @@
 import { spring } from 'svelte/motion';
 import { reducedMotion } from '../logic/stores';
 
-let text = 'lossless';
+
 let scrollY;
 let rotation = spring(0, { stiffness: 0.1, damping: 0.1 });
 
@@ -17,17 +17,15 @@ $: rotation.set(scrollY);
 <section id="about">
   <div class="container">
     <div class="content">
-      <h1>About this thing</h1>
+      <h1>핵마켓 중요 이벤트 내용</h1>
       <!-- <img src="./media/asylum-escapee.jpg" alt="Ron Au"> -->
       <!-- <img src="./media/asylum-escapee.jpg" alt="Ron Au" style="transform: rotate({scrollY}deg)"> -->
       <!-- <img src="./media/asylum-escapee.jpg" alt="Ron Au" style="transform: rotate({$rotation}deg)"> -->
       <img src="./media/asylum-escapee.jpg" alt="Ron Au" style="transform: rotate({reducedMotion.gate($rotation)}deg)">
       <p>
-        The creation of Ronvert is a reponse to the question: "Why not?" A <span
-          on:mouseenter={useless}
-          on:mouseleave={lossless}>{@html text}</span
-        > file converter with zero online data transfer is something to behold. The creation of Ron Au on the other hand
-        begs the question: "Why?"
+       핵마켓 신규 가입시 1000 포인트 무료 지급 
+        첫 충전시 충전금의 20% 추가 지급
+      고객 등급별 제품 추가 할인 혜택까지
       </p>
     </div>
   </div>

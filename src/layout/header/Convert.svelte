@@ -27,7 +27,7 @@ const finish = (node) => {
 
 <div class="convert">
   <!-- PEW PEW -->
-  <!-- {#if $convertInProgress}
+  {#if $convertInProgress}
     <div class="box" in:fade={{ duration: 500 }}
     >
       <img src="./media/blue-box.svg" alt="Box representing input file" role="presentation">
@@ -39,7 +39,7 @@ const finish = (node) => {
   {/if} -->
 
   <!-- PEW PEW PEW -->
-  <!-- {#if $convertInProgress}
+  {#if $convertInProgress}
     <div class="box" class:shaking in:fade={{ duration: 500 }}
       on:introend={() => unboxingInProgress = true}
     >
@@ -62,7 +62,7 @@ const finish = (node) => {
         }}
       >
     {/each}
-  {/if} -->
+  {/if}
 
   <!-- PEW PEW PEW A11Y-->
   {#if $convertInProgress}

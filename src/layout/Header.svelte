@@ -1,5 +1,5 @@
 <script>
-import FileInputButton from './header/FileInputButton.svelte';
+
 import Convert from './header/Convert.svelte';
 import Compare from './header/Compare.svelte';
 import { convertMode, reducedMotion } from '../logic/stores';
@@ -11,26 +11,19 @@ import { bounceOut } from 'svelte/easing';
 <header id="header">
   <div class="container">
     <h2>
-      <a href="https://ronvert.pages.dev">RONVERT</a>
+      <a href="#">핵 마 켓</a>
     </h2>
     <div class="hero">
       <div class="hero-text">
-        <!-- <h1 title="And never will">The 1:1 file converter you never knew you wanted</h1> -->
-        <!-- <h1 title="And never will" in:fly={{ x: -500, duration: 1_500, easing: bounceOut }}>The 1:1 file converter you never knew you wanted</h1> -->
-        <h1 title="And never will" in:fly={{ x: reducedMotion.gate(-500), duration: 1_500, easing: bounceOut }}>The 1:1 file converter you never knew you wanted</h1>
-        <h2>Say goodbye to bulk. Then say hello to it.</h2>
+        <h1 title="And never will" in:fly={{ x: reducedMotion.gate(-500), duration: 1_500, easing: bounceOut }}>국내 최저가 핵마켓</h1>
+        <h2>정지없는 배그핵 서든핵 옵치핵 최저가보장</h2>
       </div>
       <div id="hero-media">
-        {#if $convertMode}
-          <Convert />
-        {:else}
-          <Compare />
-        {/if}
+        <img src="./media/blue-box.svg" alt="Box representing input file" role="presentation">
       </div>
     </div>
     <div class="buttons">
-      <FileInputButton on:click />
-      <button on:click={() => window.location.replace('#about')}>Learn more</button>
+      <button on:click={() => window.location.replace('https://hackmarket.netlify.app/')}>Learn more</button>
     </div>
   </div>
 </header>
