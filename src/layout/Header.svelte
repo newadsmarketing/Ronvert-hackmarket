@@ -23,7 +23,7 @@ import { bounceOut } from 'svelte/easing';
       </div>
     </div>
     <div class="buttons">
-      <button on:click={() => window.location.replace('https://hackmarket.netlify.app/')}>Learn more</button>
+      <button on:click={() => window.location.replace('https://hackmarket.netlify.app/')}>핵마켓 바로가기</button>
     </div>
   </div>
 </header>
