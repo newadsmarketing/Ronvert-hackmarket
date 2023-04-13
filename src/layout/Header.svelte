@@ -19,7 +19,7 @@ import { bounceOut } from 'svelte/easing';
         <h2>정지없는 배그핵 서든핵 옵치핵 최저가보장</h2>
       </div>
       <div id="hero-media">
-        <img src="./media/blue-box.svg" alt="Box representing input file" role="presentation">
+        <img src="./media/box-after.png" alt="Box representing input file" role="presentation">
       </div>
     </div>
     <div class="buttons">
