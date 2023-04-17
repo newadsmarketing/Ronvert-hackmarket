@@ -11,7 +11,7 @@ import { bounceOut } from 'svelte/easing';
 <header id="header">
   <div class="container">
     <h2>
-      <a href="https://gamehack.netlify.com">게임핵마켓</a>
+      <a href="https://korhack.netlify.com">게임핵마켓</a>
     </h2>
     <div class="hero">
       <div class="hero-text">
