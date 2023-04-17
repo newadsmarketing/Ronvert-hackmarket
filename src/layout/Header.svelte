@@ -11,11 +11,11 @@ import { bounceOut } from 'svelte/easing';
 <header id="header">
   <div class="container">
     <h2>
-      <a href="#">핵 마 켓</a>
+      <a href="https://gamehack.netlify.com">게임핵마켓</a>
     </h2>
     <div class="hero">
       <div class="hero-text">
-        <h1 title="And never will" in:fly={{ x: reducedMotion.gate(-500), duration: 1_500, easing: bounceOut }}>국내 최저가 핵마켓</h1>
+        <h1 title="And never will" in:fly={{ x: reducedMotion.gate(-500), duration: 1_500, easing: bounceOut }}>최저가 게임 핵마켓</h1>
         <h2>정지없는 배그핵 서든핵 옵치핵 최저가보장</h2>
       </div>
       <div id="hero-media">
